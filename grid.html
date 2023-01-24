@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+    body
+    {
+        background-color: antiquewhite;
+    }
+    .cname
+    {
+        background-color: aquamarine;
+        border: 2px solid rgb(15, 15, 15);
+        padding: 15px 20px;
+    }
+    .container
+    {
+        display: grid;
+        height: 100vh;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'header header header header'
+        'side main main main'
+        'footer footer footer footer';
+
+    }
+    .header
+    {
+        grid-area: header;
+        background-color: olivedrab;
+    }
+    .main
+    {
+        grid-area: main;
+        background-color: goldenrod;
+    }
+    .side
+    {
+        grid-area: side;
+        background-color: slategrey;
+    }
+    .footer
+    {
+        grid-area: footer;
+        background-color: khaki;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header cname"> Home About Us Contact Us Gallery</div>
+        <div class="main cname ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, adipisci explicabo nihil reiciendis autem molestias itaque ut veritatis libero optio asperiores porro hic ad reprehenderit consequuntur, dicta praesentium sunt debitis.</div>
+        <div class="side cname">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea sapiente molestias, eligendi doloribus, perferendis excepturi, iste tempore architecto tenetur similique assumenda! Veritatis voluptatem consequuntur sunt aperiam est tenetur, repudiandae maiores?</div>
+        <div class="footer cname">Address</div>
+    </div>
+</body>
+</html>

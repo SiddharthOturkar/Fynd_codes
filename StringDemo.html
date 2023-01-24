@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Welcome Guys</p>
+    <p id="demo1"></p>
+    <script>
+        // let a='sadbkabsaff';
+        // document.getElementById('demo').innerHTML=a.length;   //property without braces , with braces method
+
+
+        // let name1='abc';//String Literal
+        // let name2='abc';
+        // let name3=new String('abc'); //String Object
+        // let name4=new String('abc');
+        // if(name3===name4)
+        // {
+        //     console.log('its true or name 3');
+        // }
+        // else
+        // {
+        //     console.log('its not true')
+        // }
+
+        //Slice Method
+
+        // let data="coffee,milk,tea";
+        // let data2=data.slice(4,12);
+        // let data3=data.slice(-11.-5);
+        // console.log(data2);
+        // console.log(data3);
+
+        //Substring
+        // let data="coffee,milk,tea";
+        // let data2=data.substring(6,12);
+        // let data3=data.substring(-11); //negative values are not allowed
+        // console.log(data2); 
+
+        //Substr
+        // let data="coffee,milk,tea,shakes,smoothies";
+        // let data2=data.substr(5,12); //calculate how to add more values
+        // console.log(data2);
+
+        //replace
+        // function show()
+        // {
+        //     let str = document.getElementById('demo').innerHTML;
+        //     document.getElementById('demo1').innerHTML=str.replace("Guys","Students")
+        //     // document.getElementById('demo1').innerHTML=str.replaceAll("Guys","Students")
+            
+        // }
+
+        // show()
+
+        //Concat
+
+        //Trim Mthd
+
+        // let name = "Abc";
+        // let name2= "     Abc";
+        // let name4= "     Abc     ";
+        // let name3=name2.trim();
+        // console.log(name4.trim());
+ 
+ //Task =>Remove inBetween Spaces
+        let a = "ABC   XYZ";
+        a.trim();
+        let b = a.lastIndexOf(' ');//7
+        let x2 = a.slice(b+1); //x=XYZ
+        console.log(x2);
+
+        let g = a.indexOf(' ');
+        // console.log(g);//3
+
+        let x1 = a.slice(0,g);
+        // console.log(x1);//ABC
+
+        let str1= x1.concat(" "+x2);
+        console.log(str1); //ABC XYZ
+
+
+        // console.log(b);
+        // console.log(c)
+        // let b = a.trim();
+        // let c = a.split(" ");
+        // console.log(c);
+        // let x = c.slice(3,5).join(' ')
+        // let x1 = c.slice(0,1); //x=ABC
+        
+        // console.log(x1);
+        // let d = x1.concat(" "+x2);
+        // console.log(d);
+        // console.log(x);
+        // let d = c.join('');
+        // console.log(d);
+            
+        // let x='6';
+        //toString mthd
+        // document.getElementById('demo1').innerHTML=x.padStart(4,"a")
+        
+       
+
+ 
+ </script>
+    
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, totam aperiam. Natus in nisi asperiores, ea aut quia totam nulla delectus porro cupiditate animi accusamus earum voluptatem laborum dolorem tenetur?</p>
+    </div>
+    <script>
+    const demo = document.getElementById('demo');
+        ['mousedown', 'mouseup'].forEach( type =>{
+            if(type === 'mousedown'){
+                demo.addEventListener(type, ()=>    
+                    console.log('mousedown')
+                )
+            }
+            else if (type === 'mouseup'){
+                demo.addEventListener(type, ()=>{
+                    console.log('mouseup')
+                })
+            }
+        })
+
+    // const demo = document.getElementById('demo');
+    //     ['keydown', 'keyup'].forEach( type =>{
+    //         if(type == 'keydown'){
+    //             demo.addEventListener(type, ()=>    
+    //                 console.log('keydown')
+    //             )
+    //         }
+    //         else if (type == 'keyup'){
+    //             demo.addEventListener(type, ()=>{
+    //                 console.log('keyup')
+    //             })
+    //         }
+    //     })
+    </script>
+</body>
+</html>

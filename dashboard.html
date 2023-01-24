@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+<aside>
+    <div class="top">
+        <div class="logo">
+            <img src="./images/fynd.png" alt="">
+            <h1 id="c_name"><span id="c_name1">FYND</span> ACADEMY</h1>
+        </div>
+            <div class="close" id="close_btn">
+                <span class="material-icons-sharp">
+                    close
+                    </span>
+            </div>
+
+    </div>
+    <div class="sidebar">
+        <a href="#">
+            <span class="material-icons-sharp">
+                grid_view
+                </span>
+                <h3>Dashboard</h3>
+        </a>
+
+        <a href="#" class="active">
+            <span class="material-icons-sharp">
+                person
+                </span>
+                <h3>Students</h3>
+        </a>
+
+        <a href="#">
+            <span class="material-icons-sharp">
+                menu_book
+                </span>
+                <h3>Course</h3>
+        </a>
+
+        <a href="#">
+            <span class="material-icons-sharp">
+                trending_up
+                </span>
+                <h3>Analytics</h3>
+        </a>
+
+        <a href="#">
+            <span class="material-icons-sharp">
+                chat
+                </span>
+                <h3>Messages <span class="message_count">19</span></h3>
+        </a>
+
+        <a href="#">
+            <span class="material-icons-sharp">
+               receipt_long
+                </span>
+                <h3>Reports</h3>
+        </a>
+
+        <a href="#">
+            <span class="material-icons-sharp">
+              add
+                </span>
+                <h3>Add Course</h3>
+        </a>
+
+        <a href="#">
+            <span class="material-icons-sharp">
+              settings
+                </span>
+                <h3>Settings</h3>
+        </a>
+
+        <a href="#">
+            <span class="material-icons-sharp">
+              logout
+                </span>
+                <h3>Logout</h3>
+        </a>
+    </div>
+</aside>
+
+
+
+<!-- ====main===== -->
+
+<main>
+    <h1>Dashboard</h1>
+    <div class="date">
+        <input type="date">
+    </div>
+
+    <div class="insights">
+        <div class="total_students">
+            <span class="material-icons-sharp">groups</span>
+            <div class="middle">
+                <div class="left">
+                <h3>Total Students</h3>
+                <h1>89</h1>
+            </div>
+        </div>
+        </div>
+
+        <div class="class_request">
+            <span class="material-icons-sharp">request_page</span>
+            <div class="middle">
+                <div class="left">
+                <h3>Class Request</h3>
+                <h1>14</h1>
+            </div>
+        </div>
+        </div>
+
+
+
+        <div class="student_activity">
+            <span class="material-icons-sharp">self_improvement</span>
+            <div class="middle">
+                <div class="left">
+                <h3>Students Activity</h3>
+                <h1>18</h1>
+            </div>
+        </div>
+        </div>
+
+
+        <div class="notifications">
+            <span class="material-icons-sharp">notifications_active</span>
+            <div class="middle">
+                <div class="left">
+                <h3>Notifications</h3>
+                <h1>14</h1>
+            </div>
+        </div>
+        </div>
+
+
+    </div>
+
+    <div class="recent_students">
+        <h2>Recent Students</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student UID</th>
+                    <th>Course Name</th>
+                    <th>Fee Status</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr><td>Sarah</td>
+                <td>48</td>
+                <td>Fashion</td>
+                <td>Completed</td>
+                <td>details</td>
+                </tr>
+
+
+                <tr><td>Sarah</td>
+                    <td>48</td>
+                    <td>Fashion</td>
+                    <td class="warning">Pending</td>
+                    <td class="primary">details</td>
+
+                    </tr>
+
+                    <tr><td>Sarah</td>
+                        <td>48</td>
+                        <td>Fashion</td>
+                        <td>Completed</td>
+                        <td>details</td>
+                        </tr>
+
+                        <tr><td>Sarah</td>
+                            <td>48</td>
+                            <td>Fashion</td>
+                            <td>Completed</td>
+                            <td>details</td>
+                            </tr>
+
+                            <tr><td>Sarah</td>
+                                <td>48</td>
+                                <td>Fashion</td>
+                                <td>Completed</td>
+                                <td>details</td>
+                                </tr>
+            </tbody>
+        </table>
+        <a href="#" class="show">Show All</a>
+    </div>
+</main>
+
+
+
+<!-- ======right side==== -->
+<div class="right">
+    <div class="top">
+        <button class="menu_btn">
+            <span class="material-icons-sharp">menu</span>
+
+        </button>
+
+        <div class="theme_change">
+            <span class="material-icons-sharp active">light_mode</span>
+            <span class="material-icons-sharp">dark_mode</span>
+        </div>
+
+        <div class="profile">
+            <div class="info">
+                <p>Hello, Sarah Jessica Parker</p>
+                <small>Admin</small>
+            </div>
+
+            <div class="profile_photo">
+                <img src="./images/dosa.png" alt="">
+
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="recent_highlights">
+        <h2>Recent Highlights</h2>
+        <div class="highlights">
+            <div class="highlight">
+                <div class="profile_photo">
+                    <img src="./images/Pavbhaji.png" alt="">
+                </div>
+                <div class="message">
+                    <p><b>Cinthia Nixon</b> has subitted the assignment_1 on thursday</p>
+                    <small>5 Minutes Ago</small>
+                </div>
+            </div>
+
+            <div class="highlight">
+                <div class="profile_photo">
+                    <img src="./images/burger.png" alt="">
+                </div>
+                <div class="message">
+                    <p><b>Manny Nixon</b> has subitted the assignment_1 on thursday</p>
+                    <small>10 Minutes Ago</small>
+                </div>
+            </div>
+
+            <div class="highlight">
+                <div class="profile_photo">
+                    <img src="./images/Dessert.png" alt="">
+                </div>
+                <div class="message">
+                    <p><b>Gloria</b> has subitted the assignment_1 on thursday</p>
+                    <small>5 Hours Ago</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- =====student analysis===== -->
+<div class="student_analysis">
+    <h2>Student Analysis</h2>
+    <div class="student_analytic">
+        <div class="icon">
+            <span class="material-icons-sharp">moving</span>
+        </div>
+
+        <div class="right">
+            <div class="info">
+                <h3>Attendance > 85%</h3>
+                <small>Last 12 Hours</small>
+            </div>
+            <h5 class="success">+35%</h5>
+        </div>
+    </div>
+
+
+
+    <div class="student_analytic">
+        <div class="icon">
+            <span class="material-icons-sharp">sync_alt</span>
+        </div>
+
+        <div class="right">
+            <div class="info">
+                <h3>Attendance > 55%</h3>
+                <small>Last 12 Hours</small>
+            </div>
+            <h5 class="success">+45%</h5>
+        </div>
+    </div>
+
+
+
+    <div class="student_analytic">
+        <div class="icon">
+            <span class="material-icons-sharp">trending_down</span>
+        </div>
+
+        <div class="right">
+            <div class="info">
+                <h3>Attendance < 55%</h3>
+                <small>Last 12 Hours</small>
+            </div>
+            <h5 class="warning">+25%</h5>
+        </div>
+    </div>
+
+
+    <div class="additional_information student_analytic">
+        <div>
+            <button>Click Here</button> to see the attendance of individual student
+        </div>
+    </div>
+</div>
+
+</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <!-- <p id="demo">67</p> -->
+        <form>
+            <label> 1st Number : <input type="name" id="n1"></label> <br>
+            <label> Enter 2nd Number : <input  type="name" id="n2"></label><br>
+            
+            
+            <label> <input type="name" id="b2"></label>
+        <!-- <div id="b2"></div> -->
+        </form>
+        <button type='button'id="b1">Calculate</button><br>
+    <script>
+        
+        var btn = document.getElementById('b1');
+        var op = document.getElementById('b2');
+        btn.addEventListener("click", function()
+        {
+            var a= document.getElementById('n1').Value;
+            var b = document.getElementById('n2').Value;
+            var c = a+b;
+
+            // op.innerHTML = c;
+            document.getElementById('b2').innerHTML=c;
+
+
+        })
+        // function strinp(abc)
+        // {
+        //     // var a = document.getElementById('demo').innerHTML;
+        //     if (typeof(abc) =="string")
+        //     {
+        //         console.log("Input is String");            
+        //     }
+        //     else
+        //     {
+        //     console.log("Input is Not String");
+        //     }
+        // }
+        // var b1 = true; 
+        // var b2 = "3123";    
+        // var b3 = "String";
+        // strinp(b1);
+        // strinp(b2);
+        // strinp(b3);
+    </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        html{
+            color:#333;
+
+        }
+        div,section{
+            padding: 10px;
+            border: 1px solid #333;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    
+    <h2>Id (#demo)</h2>
+    <div id="demo"><span>Span 1</span> Access by ID <span> Span 2</span></div>
+    <h2>Class (.demo)</h2>
+    <div class="demo"> <span> Span 3</span> Access by Class(1) <span>Span 4</span> </div>    
+    <div class="demo">Access by Class(2)</div>
+
+    <h2>Tag (section)</h2>
+    <section>Access by Tag (1)</section>
+    <section>Access by Tag (2)</section>
+
+    <h2>Query Selector</h2>
+    <div class="query-class" id="demo-query">Access me by query</div>
+
+    <h2>Query Selector All</h2>
+    <div class="demo-query-all"> <span>Span 5</span> Access me by query all(1) <span>Span 6</span> </div>
+    <div class="demo-query-all">Access me by query all(2)</div> 
+
+</body>
+</html>
+
+<!-- document.getElementById('demo')
+<div id=​"demo">​…​</div>​<span>​Span 1​</span>​" Access by ID "<span>​ Span 2​</span>​</div>​
+const a = document.getElementById('demo')
+undefined
+a.style.border="2px solid blue";
+'2px solid blue'
+document.getElementById('span')
+null
+const b = document.getElementsByClassName('demo')
+undefined
+b.style.border = "2px solid Yellow";"
+VM724:1 Uncaught SyntaxError: Invalid or unexpected token
+document.getElementsByClassName('demo')
+HTMLCollection(2) [div.demo, div.demo]0: div.demo1: div.demolength: 2[[Prototype]]: HTMLCollection
+b.style.border = "2px solid Yellow";"
+VM732:1 Uncaught SyntaxError: Invalid or unexpected token
+for (let index = 0; index < b.length; index++) {
+       b[index].style.border='2px solid lightgreen'
+}
+'2px solid lightgreen'
+const c = document.getElementsByTagName('section')
+undefined
+ document.getElementsByTagName('section')
+HTMLCollection(2) [section, section]0: section1: sectionlength: 2[[Prototype]]: HTMLCollection
+for (let index = 0; index < b.length; index++) {
+       c[index].style.border='2px solid lightpink'
+}
+'2px solid lightpink'
+const d = document.querySelector('#demo-query')
+undefined
+d.style.border= '2px solid brown'
+'2px solid brown'
+const e = document.querySelector('.demo-class')
+undefined
+e.style.border= '2px solid violet
+VM1480:1 Uncaught SyntaxError: Invalid or unexpected token
+    const e = document.querySelector('.query-class')
+undefined
+e.style.border = '2px solid violet'
+'2px solid violet'
+const f = document.querySelectorAll('.demo-query-all')
+undefined
+f.style.border= '2px solid grey'
+VM1766:1 Uncaught TypeError: Cannot set properties of undefined (setting 'border')
+    at <anonymous>:1:15
+(anonymous) @ VM1766:1
+document.querySelectorAll('.demo-query-all')
+
+NodeList(2) [div.demo-query-all, div.demo-query-all]0: div.demo-query-all1: div.demo-query-alllength: 2[[Prototype]]: NodeList
+for (let index = 0; index < b.length; index++) {
+       fetch[index].style.border='2px solid lightpink'
+}
+VM1784:2 Uncaught TypeError: Cannot read properties of undefined (reading 'style')
+    at <anonymous>:2:21
+(anonymous) @ VM1784:2
+for (let index = 0; index < b.length; index++) {
+       f[index].style.border='2px solid lightpink'
+}
+'2px solid lightpink'
+const demoQueryAll = document.querySelector('.demo-query-all')
+        console.log(demoQueryAll)
+        demoQueryAll.style.border = "3px solid red"
+VM1801:2 <div class=​"demo-query-all" style=​"border:​ 3px solid red;​">​…​</div>​
+'3px solid red'
+document.getElementById('span')
+null
+const g = document.querySelector('span')
+undefined
+g.style.border = '2px solid red'
+'2px solid red -->

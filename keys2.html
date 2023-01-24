@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keys with ASCII Values</title>
+</head>
+<body>
+    <div id="form">
+        <h1 id=""h1>
+            Keyboard Event
+        </h1>
+        <p>OnKeyDown</p>
+        <input type="text" id="down">
+
+        <p>OnKeyUp</p>
+        <input type="text" id="up">
+
+        <p>OnKeyPress</p>
+        <input type="text" id="press">
+    </div>
+
+    <!-- <div class="demo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, totam aperiam. Natus in nisi asperiores, ea aut quia totam nulla delectus porro cupiditate animi accusamus earum voluptatem laborum dolorem tenetur?</p>
+    </div> -->
+
+    <script>
+            // let kd = document.getElementById('down')
+            //     kd.addEventListener('keydown',function show(e)
+            //     {
+            //         // alert(this.value)
+            //         // document.getElementById('form').style.backgroundColor=this.value
+            //         console.log(e)
+            //         console.log(e.keyCode)
+            //     })
+
+            //     let ku = document.getElementById('up')
+            //     ku.addEventListener('keyup',function show(e)
+            //     {
+            //         // alert(this.value)
+            //         console.log(e)
+            //         console.log(e.keyCode)
+            //         // document.getElementById('form').style.backgroundColor=this.value
+            //     })
+
+
+            //     let kp = document.getElementById('press')
+            //     kp.addEventListener('keypress',function show(e)
+            //     {
+            //         // alert(this.value)
+            //         console.log(e)
+            //         console.log(e.keyCode)
+            //         // document.getElementById('form').style.backgroundColor=this.value
+            //     })
+
+        document.addEventListener('keyup',(e)=>
+        {
+            if(e.key=='u'||e.key=='U')
+            {
+                alert('Pressed u')
+                console.log(e.keyCode)
+            }
+        })
+
+        
+        document.addEventListener('keyup',(e)=>
+        {
+            if(e.key=='q' && e.ctrlKey)
+            {
+                alert('See U')
+                console.log(e.keyCode)
+            }
+        })
+
+        document.addEventListener('keydown',function pr(e)
+        {
+            if(e.key=='s' && e.ctrlKey)
+            {
+                e.preventDefault(); //stopped ctrl+s work on keydown only not on keyup
+                alert('We are not saving !!')
+                console.log(e.keyCode)
+            }
+        })
+
+        // //Task
+        // document.addEventListener('keyup',function pr(e)
+        // {
+        //     if(e.keyup=='d' && e.keypress=='l')
+        //     {
+        //         e.preventDefault();
+        //         // if(e.type=='keydown')
+        //         // {
+
+        //         // }
+        //         // else
+        //         // {
+        //             // alert('Worked')
+        //             console.log('abc')
+        //         // }
+        //     }
+        // })
+
+        // document.addEventListener('keydown keyup',function pr(e)
+        // {
+        //     while(e.key=='d' && e.key=='f')
+        //     {
+        //         e.preventDefault();
+        //         // if(e.type=='keydown')
+        //         // {
+
+        //         // }
+        //         // else
+        //         // {
+        //             // alert('Worked')
+        //             console.log('abc')
+        //             // }
+        //     }
+        // })
+
+        // const demo= document.getElementById('demo');
+        // ['mousedown','mouseup'].forEach(type =>{
+        //     if (type==='mousedown')
+        //     {
+        //         demo.addEventListener(type,()=>console.log('mouse down'))
+        //     }
+        //     else
+        //     {
+        //         demo1.addEventListener(type,()=>console.log('mouse up'))
+        //     }
+
+        // })
+        // document.addEventListener('keyup',(e)=>
+        // {
+        // const demo = document.getElementById('up');
+        // ['keydown', 'keyup'].forEach( type =>{
+        //     if(type == 'keydown'){
+        //         demo.addEventListener(type, ()=>    
+        //             console.log('keydown')
+        //         )
+        //     }
+        //     else if (type == 'keyup'){
+        //         demo.addEventListener(type, ()=>{
+        //             console.log('keyup')
+        //         })
+        //     }
+        // })
+    // })
+    </script>   
+</body>
+</html>

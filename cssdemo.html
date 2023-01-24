@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+    body
+    {
+        background: linear-gradient(-45deg,red 20%,black 40%,white 45%);
+    }
+    .a1
+    {
+        margin: 100px;
+        /* margin-left: 100px; */
+        height: 200px;
+        width: 200px;
+        background-color: yellowgreen;
+        text-align: justify;
+        padding: 20px;
+        border: 2px dotted khaki;
+        transition: ease-in width 2s, height 2s, background-color 2s ;
+    }
+    .a1:hover
+    {
+        background-color: aqua;
+        border: 5px solid red;
+        /* transform: translate(50px,100px); */
+        transform: rotate(180deg);
+        width: 400px;
+        height: 300px;
+        background-color: beige;
+        /* transform: scale(1,2); */
+    }
+    .a2
+    {
+        height: 400px;
+        width: 300px;
+        margin: 100px 150px;
+        /* transform: translate(50px,100px); */
+    }
+</style>
+<body>
+    <div class="a1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error provident illum, repellat molestiae facilis mollitia deleniti excepturi dicta saepe, architecto soluta, incidunt omnis dignissimos et similique voluptates vero a? Ducimus.</div>
+    <img src="Car.jpg" class="a2">
+    
+</body>
+</html>

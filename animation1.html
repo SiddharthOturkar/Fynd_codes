@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+    <style>
+        body
+        {
+            background-color: blanchedalmond;
+        }
+        .dir1
+        {
+            position: absolute;
+            width: 100px;
+            height: 10px;
+            margin-left: 45%;
+            background-color: red;
+            animation-name: new1;
+            animation-duration: 5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes new1
+        {
+            0% {background-color: aqua ; left : 0px;top:0px;}
+            100%{background-color: red; left: 0px; top :260px}
+            /* 75%{background-color: red; left: 200px; top :0px}
+            100%{background-color: green;left: 0px; top: 0px;} */
+        
+        }
+        .dir2
+        {
+            position: absolute;
+            width: 10px;
+            height: 100px;
+            background-color: red;
+            animation-name: new2;
+            margin-left: 0%;
+            margin-top: 20%;
+            animation-duration: 5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes new2
+        {
+            0% {background-color: aqua ; left : 0px;top:0px;}
+            100%{background-color: red; left: 585px; top :0px}
+            /* 75%{background-color: red; left: 200px; top :0px}
+            100%{background-color: green;left: 0px; top: 0px;} */
+        
+        }
+        .dir3
+        {
+            position: absolute;
+            width: 100px;
+            height: 10px;
+            /* left: 100px; */
+            /* top: 100px; */
+            margin-left: 45%;
+            margin-top: 48%;
+            background-color: red;
+            animation-name: new3;
+            animation-duration: 5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes new3
+        {
+            0% {background-color: aqua ; left : 0px;top:0px;}
+            100%{background-color: red; left: 0px; top :-270px}
+            /* 75%{background-color: red; left: 200px; top :0px}
+            100%{background-color: green;left: 0px; top: 0px;} */
+        
+        }
+        .dir4
+        {
+            position: absolute;
+            width: 10px;
+            height: 100px;
+            /* left: 100px; */
+            margin-left: 98%;
+            margin-top: 20%;
+            background-color: red;
+            animation-name: new4;
+            animation-duration: 5s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+        }
+        @keyframes new4
+        {
+            0% {background-color: aqua ; left : 0px;top:0px;}
+            100%{background-color: red; left: -600px; top :0px}
+            /* 75%{background-color: red; left: 200px; top :0px}
+            100%{background-color: green;left: 0px; top: 0px;} */
+        
+        }
+
+    </style>
+<body>
+        <div class="dir1"></div>
+        <div class="dir2"></div>
+        <div class="dir3"></div>
+        <div class="dir4"></div>
+</body>
+</html>

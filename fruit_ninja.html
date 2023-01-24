@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Ninja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container_playgame">
+        <p class="Title">Fruit Ninja</p>
+        <!-- <p class="start">Play Game</p> -->
+        <a href="select_fruit.html"><button type="button" class="start">Play Game</button></a>
+        <!-- <button type="button" onclick="alert('Hello world!')" id="start" class="start">Play Game</button> -->
+        <!-- <button type="button" onClick="window.location='#container_selectfruit'" class="start">Play Game</button> -->
+        
+    </div>
+
+    <div id="container_startgame">
+
+        <p>Hello World</p>
+    </div>
+
+    <script>
+        let start = document.getElementById('start');
+        start.addEventListener("click",playgame);
+
+        function playgame()
+        {
+            console.log("Started");
+        }
+
+        let playbuttons = document.getElementById("start");
+
+        playbuttons.addEventListener("click",function()
+        {
+            window.open(window.location.href,'_target');
+        });
+    </script>
+</body> 
+</html>

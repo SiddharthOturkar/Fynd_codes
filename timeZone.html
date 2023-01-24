@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Zone</title>
+    <style>
+        .container
+        {
+            display: flex;
+            margin: 30px;
+            padding: 50px;
+        }
+        .timebox
+        {
+            position: relative;
+            align-items: center;
+            transition: ease-in transform 1s;
+        }
+        .timebox img
+        {
+            height: 200px;
+            width: 300px;
+            /* transition: ease-in transform 1s; */
+        }
+        img:hover
+        {
+            /* transform: scale(1.5); */
+            opacity: 0.4;
+        
+            
+        } 
+        .timebox:hover
+        {
+            transform: scale(1.5);
+            /* opacity: 0.2;*/
+            
+        }
+        .p1,.p2,.p3,.p4
+        {
+            opacity: 0;
+            font-size: 10px;
+            position: relative;
+            margin-top: -125px;
+            margin-left: 85px;
+            /* transition:ease-in font-size 1s; */
+        }
+        .p1:hover
+        {
+            opacity: 1;
+            font-size: 15px;
+            color: black;
+        }
+
+        .p2:hover
+        {
+            opacity: 1;
+            font-size: 15px;
+            color: black;
+        }
+
+        .p3:hover
+        {
+            opacity: 1;
+            font-size: 15px;
+            color: black;
+        }
+
+        .p4:hover
+        {
+            opacity: 1;
+            font-size: 15px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="timebox">
+            <h1>India</h1>
+            <p id="IndiaTime"></p>
+            
+        </div>
+    </div>
+    
+    <script>
+        var IndianTime=function()
+        {
+            document.getElementById("IndiaTime").innerHTML=new Date().toLocaleString('en-US',{timeZone:'Asia/kolkata',timeStyle:"medium",hourCycle:"h24"})
+        }
+        IndianTime();
+
+        setInterval(IndianTime,1000)
+    </script> -->
+
+    <div class="container">
+        <div class="timebox">
+            <img src="images/India.png">
+            <p class="p1" id="IndiaTime"></p>
+            
+        </div> 
+        <div class="timebox"> 
+            <img src="images/Aus.png">
+            <p class="p2" id="AusTime"></p>
+        </div>
+        <div class="timebox">
+            <img src="images/Dubai.png">
+            <p class="p3" id="DubaiTime"></p>
+        </div>
+        <div class="timebox">
+            <img src="images/Usa.png">
+            <p class="p4" id="USATime"></p>
+        </div>
+    </div>
+    <script>
+        
+        var IndianTime=function()
+        {
+            document.getElementById("IndiaTime").innerHTML=new Date().toLocaleString('en-US',{timeZone:'Asia/kolkata',timeStyle:"medium",hourCycle:"h12"})
+        }
+        IndianTime();
+
+        setInterval(IndianTime,1000)
+
+        var AusiTime=function()
+        {
+            document.getElementById("AusTime").innerHTML=new Date().toLocaleString('en-US',{timeZone:'Australia/Sydney',timeStyle:"medium",hourCycle:"h12"})
+        }
+        AusiTime();
+
+        setInterval(AusiTime,1000)
+
+        var DBTime=function()
+        {
+            document.getElementById("DubaiTime").innerHTML=new Date().toLocaleString('en-US',{timeZone:'Asia/Dubai',timeStyle:"medium",hourCycle:"h12"})
+        }
+        DBTime();
+
+        setInterval(DBTime,1000)
+
+        var USATime=function()
+        {
+            document.getElementById("USATime").innerHTML=new Date().toLocaleString('en-US',{timeZone:'Europe/London',timeStyle:"medium",hourCycle:"h12"})
+        }
+        USATime();
+
+        setInterval(USAime,1000)
+    </script>
+</body>
+</html>

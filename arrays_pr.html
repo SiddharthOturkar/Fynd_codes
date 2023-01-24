@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        // const fruits1=["Mango","Apple","orange"]
+        // document.getElementById('demo').innerHTML=fruits1;
+        // fruits1.shift();
+        // document.getElementById('demo1').innerHTML=fruits1;
+        // fruits.unshift("banana")
+        // document.getElementById('demo2')
+        
+        //Math
+        // document.getElementById('demo').innerHTML=Math.PI;
+        // document.getElementById('demo1').innerHTML=Math.E;
+        // document.getElementById('demo1').innerHTML=Math.ceil(5.1);
+        // document.getElementById('demo1').innerHTML=Math.trunc(6.2);//consider only Integer
+        // document.getElementById('demo2').innerHTML=Math.round(5.3);
+
+        // document.getElementById('demo').innerHTML=Math.sign(-5)
+        // document.getElementById('demo1').innerHTML=Math.pow(2,4);
+        // document.getElementById('demo1').innerHTML=Math.abs(-5.9);
+        // document.getElementById('demo1').innerHTML=Math.random()*10;  
+        
+        //task 1 (sort)
+        // const fruits1=["Mango","Apple","orange","Cherry","WaterMelon"]
+        // document.getElementById('demo').innerHTML=fruits1;
+        // fruits1.sort();
+        // document.getElementById('demo1').innerHTML=fruits1;
+
+        // for (let index = fruits1.length-1; index >= 0; index--) {
+        //     const element = fruits1[index];
+        //     document.write(element+",");
+        // }
+
+        //task2
+        let fruits2 = [
+                {
+                    "name": "Apple",
+                    "color": "Red",
+            
+                },
+                {
+                    "name": "Banana",
+                    "color": "Yellow",
+                    
+                },
+                {
+                    "name": "Orange",
+                    "color": "Orange",
+                    
+                }
+            ]
+
+           document.write(fruits2.sort((a, b) => a.name - b.name));
+    </script>
+    
+</body>
+</html>

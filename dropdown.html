@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            padding: 0;
+            margin: 0;
+            font-family: monospace;
+           
+        }
+        body
+        {
+            background:linear-gradient(45deg,rgba(0,170,255,0.5),50%, transparent 50%),linear-gradient(-45deg,rgba(0,170,255,0.5),50%, transparent 50%);
+            background-size: 70px 70px;
+        }
+        ul
+        {
+            list-style: none;
+            background:rgb(26, 37, 66);
+        }
+        ul li
+        {
+            display: inline-block;
+            position: relative;
+        }
+        ul li a
+        {
+            display: block;
+            padding: 20px 25px;
+            color: #FFF;
+            text-decoration: none;
+            text-align: center;
+            font-size: 20px;
+        }
+        ul li ul.dropdown
+        {
+            width: 100%;
+            background: #112C66 ;
+            position: absolute;
+            /* z-index: 999; */
+            display: none;
+        }
+        ul li a:hover
+        {
+            background: #112C66;
+           
+        }
+        ul li:hover ul.dropdown
+        {
+            display: block;
+            
+        }
+        .a1
+        {
+            width: 100px;
+            font-size: 15px;
+            /* transition: ease-in width 2s,transform 2s,font-size 2s,background 2s,color 3s; */
+            transition: ease-in width 2s,font-size 2s,background 2s,color 3s;
+            /* background: #112C66; */
+        }
+        .a1:hover
+        {
+            background: #46dba9;
+            width: 400px;
+            color: #000;
+            font-size: 40px;
+            /* transform: rotate(360deg); */
+        }
+        .a2
+        {
+            width: 100px;
+            font-size: 15px;
+            /* transition: ease-in width 2s,transform 2s,font-size 2s,background 2s,color 3s; */
+            transition: ease-in width 2s,font-size 2s,background 2s,color 3s;
+            /* background: #112C66; */
+        }
+        .a2:hover
+        {
+            background: #46dba9;
+            width: 400px;
+            color: #000;
+            font-size: 40px;
+            /* transform: rotate(360deg); */
+        }
+        .a3
+        {
+            width: 100px;
+            font-size: 15px;
+            /* transition: ease-in width 2s,transform 2s,font-size 2s,background 2s,color 3s; */
+            transition: ease-in width 2s,font-size 2s,background 2s,color 3s;
+            /* background: #112C66; */
+        }
+        .a3:hover
+        {
+            background: #46dba9;
+            width: 400px;
+            color: #000;
+            font-size: 40px;
+            /* transform: rotate(360deg); */
+        }
+        .a4
+        {
+            width: 100px;
+            font-size: 15px;
+            /* transition: ease-in width 2s,transform 2s,font-size 2s,background 2s,color 3s; */
+            transition: ease-in width 2s,font-size 2s,background 2s,color 3s;
+            /* background: #112C66; */
+        }
+        .a4:hover
+        {
+            background: #46dba9;
+            width: 400px;
+            color: #000;
+            font-size: 40px;
+            /* transform: rotate(360deg); */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#">Languages</a>
+            <ul class="dropdown">
+                <li ><a href="#" class="a1">HTML</a></li>
+                <li ><a href="#" class="a2">CSS</a></li>
+                <li ><a href="#" class="a3">JAVASCRIPT</a></li>
+                <li ><a href="#" class="a4">PHP</a></li>
+            </ul>
+        </li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+
+    </ul>
+</body>
+</html>

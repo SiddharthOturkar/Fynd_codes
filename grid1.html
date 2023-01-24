@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        background-color: aquamarine;
+    }
+    .container
+    {
+        background-color: azure;
+        display: flex;
+        flex-direction: row;
+        /* width: 1000px; */
+        
+        justify-content: space-between;
+        /* justify-content: space-around; */
+        text-align: center;
+        /* align-items: center; */
+
+        
+        
+    }
+    .a1
+    {
+        background-color: black;
+        color: aliceblue;
+        padding: 20px;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* justify-items: normal; */
+        align-items: center;
+        /* gap: 10px; */
+        /* justify-content: space-between ; */
+            
+        
+    }
+    .a2
+    {
+        background-color: rgb(223, 14, 14);
+        color: aliceblue;
+        padding: 20px;
+        width: 20%;
+        /* flex-grow: 2; */
+        flex-shrink: 0.5;
+        /* flex-basis: 5; */
+    }
+    .a3
+    {
+        background-color: black;
+        color: aliceblue;
+        padding: 20px;
+        width: 20%;
+    }
+    .b1
+    {
+        background-color: rgb(69, 135, 165);
+        color: aliceblue;
+        padding: 20px;
+        width: 100px;
+        /* height: 5px; */
+        /* margin: 20px; */
+        display: flex;
+        border: 2px solid white;
+        /* justify-conten   t: space-between; */
+        justify-content: space-around;
+        /* flex-grow: ; */
+       
+    }
+    .b2
+    {
+        background-color: rgb(223, 28, 119);
+        color: aliceblue;
+        padding: 20px;
+        width: 100px;
+        /* height: 1px; */
+        display: flex;
+        border: 2px solid white;
+        /* margin: 20px; */
+        /* justify-content: space-between; */ 
+        
+        
+    }
+    .b3
+    {
+        background-color: rgb(212, 161, 20);
+        color: aliceblue;
+        padding: 20px;
+        width: 100px;
+        /* margin: 20px; */
+        /* justify-content: space-between;*/
+        display: flex;
+        border: 2px solid white;
+        justify-content: space-around;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="a1">
+            <div class="b1"></div>
+            <div class="b2"></div>
+            <div class="b3"></div> 
+
+        </div>
+        <div class="a2">Content 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod animi labore accusantium fugiat amet maxime unde reprehenderit optio sapiente facere, voluptas sint, adipisci iste maiores iusto quos totam exercitationem officia.</div>
+        <div class="a3">Content 3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, ut! Deserunt earum quos quam, animi magni culpa doloremque modi eius iste iusto assumenda reprehenderit numquam ex voluptatem eligendi ea error.</div>
+    </div>
+</body>
+</html>

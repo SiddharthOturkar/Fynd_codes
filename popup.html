@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+</head>
+    <style>
+        body
+        {
+            background-color: bisque;
+        }
+        .dir1
+        {
+            height: 100px;
+            width: 200px;
+            margin-left: 1100px;
+            margin-top: -200px;
+            background-color: rgb(22, 22, 21);
+            border: 2px dashed rgb(182, 36, 133);
+            color: rgb(197, 193, 194);
+            animation: refresh 2s;
+            /* transition-duration: 5s; */
+        }      
+        @keyframes refresh
+        {
+            0%{ background-color: rgb(0, 0, 0);margin-left: 1100px;margin-top: -200px;}
+            100%{ background-color: rgb(0, 0, 0);margin-left: 1000px;margin-top: 50px;}
+        } 
+        .a1
+        {
+            text-align: center;
+        }
+    </style>
+<body>
+    <div class="dir1"><h3 class="a1">SUCCESS</h3><h5 class="a1">Details submitted successfully</h5></div>    
+</body>
+</html>

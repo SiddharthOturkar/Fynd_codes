@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background:linear-gradient(45deg,rgba(0,170,255,0.5),50%, transparent 50%);
+        background-size: 70px 70px;
+        /* background-image: conic-gradient(green 20%,red 3%,blue); */
+    }
+    .conic
+    {
+        height: 120px;
+        width: 120px;
+        margin-top: 50px;
+        border-radius: 50%;     
+        /* background-image: conic-gradient(blue,black,red); */
+        background-image: repeating-conic-gradient(red 10%,black 20%);
+    } 
+    .conic1
+    {
+        height: 120px;
+        width: 120px;
+        margin-top: 100px;
+        border-radius: 50%;     
+        /* background-image: conic-gradient(blue,black,red); */
+        background-image: repeating-conic-gradient(red 10%,black 20%);
+    } 
+    .trf
+    {
+        height: 200px;
+        width: 200px;
+        background-color: rgb(14, 14, 14);
+        color: whitesmoke;
+        margin-left: 200px;
+        /* transform: translate(100px,100px); */
+        /* transform: translate3d(100px,100px,100px); */
+        /* transform: rotate(-45deg); */
+        transform:rotate3d(0.3,0.3,0.3,45deg);
+        /* transform: scale3d(1.5,1.5,1.5); */
+        transform: skew(-15deg, -15deg);
+    }
+    .a1
+    {
+        margin-left: 10%;
+        height: 300px;
+        width: 240px;
+        /* transform: translate(100px,100px); */
+        /* transform: translate3d(100px,100px,100px); */
+        /* transform: rotate(-45deg); */
+        transform:rotate3d(0.3,0.3,0.3,15deg);
+        /* transform: scale3d(1.5,1.5,1.5); */
+        /* transform: skew(-25deg, -25deg); */
+    }
+    .a2
+    {
+        margin-left: 10%;
+        height: 300px;
+        width: 240px;
+        /* transform: translate(100px,100px); */
+        /* transform: translate3d(100px,100px,100px); */
+        /* transform: rotate(-45deg); */
+        transform:rotate3d(0.3,0.3,0.3,273deg);
+        /* transform: scale3d(1.5,1.5,1.5); */
+        /* transform: skew(-25deg, -25deg); */
+    }
+    .a3
+    {
+        margin-left: 10%;
+        height: 300px;
+        width: 240px;
+        /* transform: translate(100px,100px); */
+        /* transform: translate3d(100px,100px,100px); */
+        /* transform: rotate(-45deg); */
+        /* transform:rotate3d(0.3,0.3,0.3,15deg); */
+        transform: scale3d(1.5,1.5,1.5);
+        /* transform: skew(-25deg, -25deg); */
+    }
+    .a4
+    {
+        margin-left: 10%;
+        height: 300px;
+        width: 240px;
+        /* transform: translate(100px,100px); */
+        /* transform: translate3d(100px,100px,100px); */
+        /* transform: rotate(-45deg); */
+        /* transform:rotate3d(0.3,0.3,0.3,15deg); */
+        /* transform: scale3d(1.5,1.5,1.5); */
+        transform: skew(-25deg, -25deg);
+    }
+    .trn
+    {
+        height: 100px;
+        width: 200px;
+        margin-top: 20%;
+        margin-bottom: 20%;
+        color: brown;
+        background-color: black;
+        /* transition: width 2s; */
+        transition: ease-in width 2s, height 2s, transform 2s,font-size 2s;
+        /*  transition-delay: 2s; */
+    }
+    .trn:hover
+    {
+        width: 400px;
+        height: 200px;
+        transform: skew(-25deg,-35deg);
+        font-size: 40px;
+    }
+
+    .trn1
+    {
+        position: relative;
+        height: 100px;
+        width: 200px;
+        margin-top: 5%;
+        margin-bottom: 20%;
+        color: brown;
+        background-color: black;
+        /* transition: width 2s; */
+        transition: ease-in width 2s, height 2s, transform 2s, background-color, 2s,color 2s, font-size 2s;
+        /*  transition-delay: 2s; */
+    }
+    .trn1:hover
+    {
+        width: 400px;
+        height: 200px;
+        transform: rotate(360deg);
+        background-color: rgb(156, 13, 8);
+        color: black;
+        font-size: 40px;
+    }
+
+    .ani
+    {
+        position: absolute;
+        height: 120px;
+        width: 120px;
+        background-color: brown;
+        animation-name: abc;
+        animation-duration: 14s;
+    }
+    @keyframes abc
+    {
+        0% {background-color: aqua ; right: 200px;top:0px;}
+        25%{background-color: red; right: 400px; top :0px}
+        50%{background-color: green;right: 400px; top: 400px;}
+        75%{background-color: black;right: 200px;top: 400px;}
+        100%{background-color: azure;right: 200px;top:0px;}
+    }
+    /* .dir0
+    {
+        margin-left: 50%;
+    } */
+
+    .dir1
+    {
+        position: absolute;
+        width: 100px;
+        height: 10px;
+        margin-left: 45%;
+        background-color: red;
+        animation-name: new1;
+        animation-duration: 5s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+    }
+    @keyframes new1
+    {
+        0% {background-color: aqua ; left : 0px;top:0px;}
+        100%{background-color: red; left: 400px; top :0px}
+        /* 75%{background-color: red; left: 200px; top :0px}
+        100%{background-color: green;left: 0px; top: 0px;} */
+    
+    }
+    .dir2
+    {
+        position: absolute;
+        width: 10px;
+        height: 100px;
+        background-color: red;
+        animation-name: new2;
+        margin-left: 45%;
+        animation-duration: 5s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+    }
+    @keyframes new2
+    {
+        0% {background-color: aqua ; left : 0px;top:0px;}
+        100%{background-color: red; left: -200px; top :300px}
+        /* 75%{background-color: red; left: 200px; top :0px}
+        100%{background-color: green;left: 0px; top: 0px;} */
+    
+    }
+    .dir3
+    {
+        position: absolute;
+        width: 100px;
+        height: 10px;
+        /* left: 100px; */
+        top: 100px;
+        margin-left: 45%;
+        background-color: red;
+        animation-name: new3;
+        animation-duration: 5s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+    }
+    @keyframes new3
+    {
+        0% {background-color: aqua ; left : 0px;top:100px;}
+        100%{background-color: red; left: 300px; top :500px}
+        /* 75%{background-color: red; left: 200px; top :0px}
+        100%{background-color: green;left: 0px; top: 0px;} */
+    
+    }
+    .dir4
+    {
+        position: absolute;
+        width: 10px;
+        height: 100px;
+        left: 100px;
+        margin-left: 45%;
+        background-color: red;
+        animation-name: new4;
+        animation-duration: 5s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+    }
+    @keyframes new4
+    {
+        0% {background-color: aqua ; left : 100px;top:0px;}
+        100%{background-color: red; left: 500px; top :350px}
+        /* 75%{background-color: red; left: 200px; top :0px}
+        100%{background-color: green;left: 0px; top: 0px;} */
+    
+    }
+</style>
+<body>
+    <h1>Conical Gradient</h1>
+    <marquee><div class="conic"></div></marquee>
+    <marquee direction="right"><div class="conic1"></div></marquee>
+    <br><br>
+    <div class="trf">This is last month of 2022</div> -->
+    <div class="trf1">This is last month of 2022</div>
+    <img src="Car.jpg" alt="" class="a1"> 
+    <img src="Car.jpg" alt="" class="a2">
+    <img src="Car.jpg" alt="" class="a3">
+    <img src="Car.jpg" alt="" class="a4">
+    <br>
+    <div class="trn">This is Transition Effect</div>    
+    <br>
+    <div class="trn1">This is Transition Effect</div>    
+
+    <!-- <div class="ani"></div>
+    <div class="dir0">
+        <div class="dir1"></div>
+        <div class="dir2"></div>
+        <div class="dir3"></div>
+        <div class="dir4"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <p id="'demo"></p>
+        <script>
+            // Obect1
+            // var a={
+            //     fname:'ABC',//key value
+            //     lname:'DEF',
+            //     age:45
+            // }
+            // console.log(a);
+            // document.write(a.fname+"<br>");
+            // document.write(a.age)
+
+
+            //Obect 2
+            // var book = new Object(); //Object is a class 
+            // book.subject ="JS";
+            // book.author= "ABC";
+            // document.write("Book Name is "+ book.subject+"<br>");
+            // document.write("Book Author is "+ book.author);
+        
+            //object3
+            // function book(title,author)
+            // {
+            //     this.title =title;
+            //     this.author=author;
+            // }
+            // title = "absc";
+            // author="asdhash"
+            // book("asd","xyz");
+            // console.log(author);
+
+            // var myBook = new book('JS','ABC');
+            // document.write("Book Name is "+ myBook.title);
+            // this keyword
+            // console.log(this);
+                
+            // function show()
+            // {
+            //     console.log('This is function');
+            //     console.log(this);
+            // }
+            // show();
+
+                // a.this
+                // document.getElementById('demo').innerHTML=a;
+                // console.log(a);
+
+            //object 4
+            // const a = {
+            //     name:'abc',
+            //     age:45,
+            //     sum :function()
+            //     {
+            //         var add = 2+2;
+            //         console.log('sum is'+add);
+            //         console.log(this);
+            //     }
+            // }
+            // a.sum();
+
+                // Array of object
+                // var a={
+                //     details1:  {    
+                //         fname:'ABC',
+                //         lname:'DEF',
+                //         age:45
+                //     },
+                //     details2: {
+                //         fname:'XYZ',
+                //         lname:'FSD',
+                //         age:63
+                //     }
+                // }
+                
+
+                // document.write(a.details1.age);
+                // document.write(a.details2.age);
+
+
+                //object inside object
+                // var b = {
+                // name: "ABC",
+                // lname:'DEF',
+                // occ: 
+                //     { 
+                //         salary: 45000, comp: 'XYZ' 
+                //     },
+                // };
+
+                // document.write(b.name);
+                // document.write(b.occ.salary);
+
+                //Array Objects
+                const arr1 = [
+                    {
+                        name:'ABC',
+                        middle:'DEF',
+                        last:'XYZ'
+                    },
+                    {
+                        name:'ABC1',
+                        middle:'DEF1',
+                        last:'XYZ1'
+                    },
+                    {
+                        name:'ABC2',
+                        middle:'DEF2',
+                        last:'XYZ2'
+                    }
+                ]
+
+                // console.log(arr1[1].middle);
+                for(let i = 0; i < arr1.length; i++)
+                {
+                    // console.log(arr1[i].name);
+                    // console.log(arr1[i].middle);
+                    // console.log(arr1[i].last);
+                    document.write(arr1[i].name);
+                    document.write(arr1[i].middle);
+                    document.write(arr1[i].last);
+                }
+
+        </script>
+    </body>
+    </html>
