@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/bck.png);
+  color: #fff;
+  font-family: "Press Start 2P", sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+  background-size: 100vw 100vh;
+}
+    
+a {
+  color: #fff;
+}
+
+h1 {
+  line-height: 1.4;
+}
+
+.btn {
+  border: 0;
+  background-color: #fff;
+  color: #d4401b;
+  padding: 15px 20px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.fruits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.fruits-list li {
+  margin: 30px;
+}
+
+
+.choose-event-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  width: 150px;
+  height: 150px;
+}
+
+.choose-event-btn:hover {
+  background-color: #fff;
+  color: #516dff;
+}
+
+.choose-event-btn:active {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.choose-event-btn img {
+  width: 150px;
+  height: 200px;
+  margin-top: -27px;
+  margin-left: -9px;
+  object-fit: contain;
+}
+
+.game-container {
+  position: relative;
+}
+
+.time,
+.score {
+  position: absolute;
+  top: 20px;
+}
+
+.time {
+  left: 20px;
+}
+
+.score {
+  right: 20px;
+}
+
+.message {
+  line-height: 1.7;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 20px;
+  z-index: 100;
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -150%);
+}
+
+.message.visible {
+  transform: translate(-50%, 150%);
+  opacity: 1;
+}
+
+.fruit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.fruit img {
+  width: 100px;
+  height: 100px;
+}
+
+.fruit.caught {
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.animal
+{
+    position: fixed;
+    height: 250px;
+    width: 300px;
+    margin: 250px;
+}
+
+
+</style>
+<body>
+    <div class="screen">
+       
+        <img src="images/Utsav.png" alt="">
+        <button class="btn" onclick="cngbg()" id="start-btn">Book Your Tickets</button>
+      </div>
+      <div class="screen">
+        <h1>List of Events</h1>
+        <ul class="fruits-list">
+          <li>
+            <button class="choose-event-btn">
+              <!-- <p>Talent Show</p> -->
+              <img class="img1" id="ts"
+                src="images/talentshow.jpg" onclick="cngbg1()";    
+                alt="fly"
+              />
+            </button>
+          </li>
+          <li>
+            <button class="choose-event-btn">
+              <!-- <p>Standup Comedy</p> -->
+              <img class="img1" id="su"
+                src="images/standup.png" onclick="cngbg2()"; 
+                alt="mosquito"
+              />
+            </button>
+          </li>
+          <li>
+            <button class="choose-event-btn">
+              <!-- <p>Bollywood Dance</p> -->
+              <img class="img1" id="bo"
+                src="images/bollywood.jpg" onclick="cngbg3()"; 
+                alt="spider"
+              />
+            </button>
+          </li>
+          <li>
+            <button class="choose-event-btn">
+              <!-- <p>Student of the Year</p> -->
+              <img class="img1" id="soty"
+                src="images/soty.png" onclick="cngbg4()"; 
+                alt="roach"
+              />
+            </button>
+          </li>
+        </ul>
+      </div>
+      
+</body>
+
+<script src="scripts.js"></script>
+</html>

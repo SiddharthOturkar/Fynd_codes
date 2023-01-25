@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+	html {
+	height: 100vh;
+	display: grid;
+	font-family: "Barlow", sans-serif;
+	/* background: #520a71; */
+	background-image: url('images/discolights.gif');
+	background-size: 100%;
+	color: black;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+}
+	.image
+	{
+		background-image: url("images/standup1.jpg");
+	}
+	.backbtn
+    {
+        position: relative;
+        top: 100px;
+        left: 250px;    
+    }
+
+    .backbtn1
+    {
+        padding: 10px;
+        margin: 10px;
+        width: 100;
+        border-radius: 20px;
+    }
+</style>
+<body>
+    <link rel="stylesheet" href="style.css">
+
+<div class="ticket">
+	<div class="left">
+		<div class="image">
+			<p class="admit-one">
+				<span>MET BKC</span>
+				<span>MET BKC</span>
+				<span>MET BKC</span>
+			</p>
+			<div class="ticket-number">
+				<a class="backbtn" href="utsav.html"><button class="backbtn1">Home Page</button></a>
+				<p id="ticket_no">
+					<!-- #20200702 -->
+				</p>
+			</div>
+		</div>
+		<div class="ticket-info">
+			<p class="date">
+				<span id="day"></span> 
+				<span class="nov-10" id="show_date"></span>
+				<span id="year"></span>
+			</p>
+			<div class="show-name">
+				<h1>#METUTSAV23</h1>
+				<h2 id="full_name"></h2>
+			</div>
+			<div class="time">
+				<p>5 PM <span>TO</span> 8 PM</p>
+			</div>
+			<div class="tagline">
+				<p>Come, Enjoy & Relax</p>
+			</div>
+			<p class="location"><span>MET BKC</span>
+				<span class="separator"><i class="fa-solid fa-cross"></i></span><span>ADGAON, NASHIK</span>
+			</p>
+		</div>
+	</div>
+	<div class="right">
+		<p class="admit-one">
+			<span>MET BKC</span>
+			<span>MET BKC</span>
+			<span>MET BKC</span>
+		</p>
+		<div class="right-info-container">
+			<div class="show-name">
+				<h1>#METUTSAV23</h1>
+			</div>
+			<div class="time">
+				<p id="show_date_1"></p>
+				<p>5 PM <span>TO</span> 8 PM</p>
+			</div>
+			<div class="barcode">
+				<img class="logo" src="images/Utsav.png" alt="QR code">
+			</div>
+			<p class="ticket-number" id="ticket_no1">
+				<!-- #20200702 -->
+			</p>
+		</div>
+	</div>
+</div>
+
+<script>
+let showday = "Wednesday";
+document.getElementById('day').innerHTML= showday;
+
+let show_date = "February 15th";
+document.getElementById('show_date').innerHTML= show_date;
+
+document.getElementById('show_date_1').innerHTML= show_date;
+
+var fname = sessionStorage.getItem("fname");
+console.log(fname);
+var lname = sessionStorage.getItem("lname");
+console.log(lname);
+var phone = sessionStorage.getItem("phone");
+console.log(phone);
+var email = sessionStorage.getItem("name");
+console.log(email);
+
+// var ts = sessionStorage.getItem("ts");
+// console.log(ts);
+
+var tn = document.getElementById('ticket_no').innerHTML=Math.floor((Math.random()*1000000)+1);;
+
+var year = new Date();
+document.getElementById('year').innerHTML=(year.getFullYear());
+
+var full_name = document.getElementById('full_name').innerHTML = fname+" "+lname;
+
+var tn2 =document.getElementById('ticket_no1').innerHTML =tn;	
+</script>
+</body>
+</html>

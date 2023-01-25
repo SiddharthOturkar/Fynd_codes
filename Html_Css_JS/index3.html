@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body
+  {
+    background-image: url("images/black.jpg");
+    background-size: 100%;
+  }
+  .container
+  {
+    margin-left: 38%;
+    margin-top:15%;
+    background: linear-gradient(45deg, rgb(76, 70, 190) 0%, rgb(37, 37, 182) 35%, rgba(0,212,255,1) 100%);
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+  }
+  .col-md-6, .col-md-12 
+  {
+    margin: 20px;
+  } 
+  
+  .style1
+  {
+    background-color: antiquewhite ;
+    text-align: center;
+    border: 2px solid rgb(13, 13, 14);
+    border-radius: 12px;
+    height: 40px;
+    width: 250px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  </style>  
+<body>
+
+    <div class="container">
+        <div class="col-md-6 box">
+          <input type="text" class="fnameInput style1"  id="fnameInput" placeholder="First Name" />
+        </div>
+  
+        <div class="col-md-6 box">
+          <input type="text" class="style1" placeholder="Lastname" id="lnameInput">
+        </div>
+        <div class="col-md-6 box">
+          <input type="text" class="style1" placeholder="Phone" id="phoneInput">
+        </div>
+        <div class="col-md-6 box">
+          <input type="text" class="style1" placeholder="Email" id="emailInput">
+        </div>
+
+        <div class="col-md-12 box">
+          <button class="btn style1" onclick="ticket()">Book a ticket</button>
+        </div>
+      </div>
+
+<script>
+    // let countrySelectBox = document.querySelector(".countrySelect");
+    // let citySelect = document.querySelector(".citySelect");
+
+    // let countriesData = {
+    //   Iran: ["Tabriz", "Tehran", "Shiraz", "Esfahan", "Mashhad"],
+    //   Turkey: ["Istanbul", "Ezmir", "Ankara", "Antaliya"],
+    //   US: ["Los Angles", "San Diego", "Chicago"],
+    // };
+
+    // countrySelectBox.addEventListener("change", () => {
+    //   if (countrySelectBox.value === "Please Select") {
+    //     citySelect.innerHTML = "";
+    //     citySelect.innerHTML += "<option>Select City</option>";
+    //   } else {
+    //     let mainCountryName = countrySelectBox.value; // Us
+    //     let mainCountryCities = countriesData[mainCountryName];
+
+    //     citySelect.innerHTML = "";
+
+    //     mainCountryCities.forEach(function (city) {
+    //       citySelect.innerHTML += "<option>" + city + "</option>";
+    //     });
+    //   }
+    // });
+
+    // var favoritemovie = "Shrek";
+    //     sessionStorage.setItem("favoriteMovie", favoritemovie);
+      function ticket()
+      {
+        // let fname = document.getElementById("fnameInput").innerHTML;
+        const fname = document.querySelector('input').value;
+        var lname = document.getElementById("lnameInput").value;
+        // const lname = document.getElementById('lnameInput').value;
+        var phone = document.getElementById("phoneInput").value;
+        var name = document.getElementById('emailInput').value;
+        
+        sessionStorage.setItem("fname",fname);
+        sessionStorage.setItem("lname",lname);
+        sessionStorage.setItem("phone",phone);
+        sessionStorage.setItem("name",name);
+       
+        alert("Make sure that details are correct");
+        window.location.href="bollywood.html";
+      }
+</script>
+</body>
+
+</html>
